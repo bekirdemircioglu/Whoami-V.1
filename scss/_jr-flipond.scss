@@ -1,0 +1,43 @@
+.file-uploader {
+    margin-bottom: 0;
+    border: 1px dashed #d5d2dc;
+    border-radius: .75rem;
+    font-family: "Noto Sans", sans-serif;
+    cursor: pointer
+}
+
+.filepond--root .filepond--drop-label {
+    min-height: 10rem
+}
+
+.filepond--root .filepond--drop-label>label {
+    cursor: pointer
+}
+
+.filepond--panel,
+.filepond--panel-root {
+    background-color: transparent !important
+}
+
+.filepond--image-preview {
+    background-color: #1f1b2d !important
+}
+
+.filepond--credits {
+    display: none
+}
+
+@media(min-width: 500px) {
+    .file-uploader-grid .filepond--item {
+        width: calc(50% - .5em)
+    }
+}
+
+[data-filepond-item-state*=error] .filepond--item-panel,
+[data-filepond-item-state*=invalid] .filepond--item-panel {
+    background-color: #f23c49
+}
+
+[data-filepond-item-state=processing-complete] .filepond--item-panel {
+    background-color: #07c98b
+}
